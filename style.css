@@ -54,3 +54,29 @@ button#btn {
   padding: 10px 20px;
   cursor: pointer;
 }
+
+/* =========================
+   BUTTON PRESS EFFECT
+   ========================= */
+
+/* semua tombol */
+button, .nav {
+  transition: transform 0.1s ease, opacity 0.1s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* efek kepencet */
+button:active,
+.nav:active {
+  transform: scale(0.92);
+  opacity: 0.7;
+}
+
+/* POWER lebih spesial */
+#btn:active {
+  background: rgba(124, 255, 251, 0.15);
+  box-shadow: 
+    0 0 8px rgba(124,255,251,0.6),
+    inset 0 0 6px rgba(124,255,251,0.5);
+}
