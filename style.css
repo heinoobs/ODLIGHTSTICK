@@ -38,10 +38,12 @@ body.on {
   font-size: 30px;
   cursor: pointer;
   user-select: none;
+  z-index: 10;
 }
 
 #lightstick {
   width: min(70vw, 320px);
+  pointer-events: auto;
 }
 
 button#btn {
