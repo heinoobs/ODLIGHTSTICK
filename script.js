@@ -42,4 +42,6 @@ img.onclick = togglePower;
 btnPower.onclick = togglePower;
 
 // START STATE
-updateImage(); // off + front
+function updateImage() {
+  img.src = "off-front.png";
+}
