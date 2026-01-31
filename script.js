@@ -2,13 +2,12 @@ const body = document.body;
 const img = document.getElementById("lightstick");
 const btn = document.getElementById("btn");
 
-let isOn = false; // START OFF
+function toggleLightstick() {
+  body.classList.toggle("on");
 
-btn.onclick = () => {
-  isOn = !isOn;
-  
-  body.classList.toggle("on", isOn);
+  const isOn = body.classList.contains("on");
   img.src = isOn ? "full front on.png" : "full front off.png";
-};
+}
 
-img.onclick = btn.onclick; // klik gambar = sama
+btn.onclick = toggleLightstick;
+img.onclick = toggleLightstick;
