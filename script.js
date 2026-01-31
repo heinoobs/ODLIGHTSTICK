@@ -55,4 +55,3 @@ btnPower.addEventListener("click", togglePower);
 
 // INIT
 updateImage();
-logo.src = "logo-off.png";
