@@ -80,3 +80,11 @@ button:active,
     0 0 8px rgba(124,255,251,0.6),
     inset 0 0 6px rgba(124,255,251,0.5);
 }
+
+.logo {
+  width: min(55vw, 180px);
+  margin-bottom: 12px;
+  user-select: none;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
