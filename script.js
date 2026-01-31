@@ -30,11 +30,12 @@ function togglePower() {
     navigator.vibrate(30);
   }
 
-  if (isOn) {
-  logo.src = "logo-on.png";
-} else {
-  logo.src = "logo-off.png";
-}
+  // logo ikut power
+  if (isOn()) {
+    logo.src = "logo-on.png";
+  } else {
+    logo.src = "logo-off.png";
+  }
 }
 
 // NAVIGATION (PAKAI addEventListener)
@@ -54,3 +55,4 @@ btnPower.addEventListener("click", togglePower);
 
 // INIT
 updateImage();
+logo.src = "logo-off.png";
