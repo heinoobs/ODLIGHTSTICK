@@ -14,6 +14,24 @@ body.on {
   background: radial-gradient(circle at center, #163f3f, #000);
 }
 
+.viewer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav {
+  background: none;
+  border: none;
+  color: #7cfffb;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav:hover {
+  opacity: 0.8;
+}
 #lightstick {
   width: min(70vw, 320px);
   transition: opacity 0.2s ease;
