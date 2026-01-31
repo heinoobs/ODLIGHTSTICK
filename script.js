@@ -23,6 +23,11 @@ function updateImage() {
 function togglePower() {
   body.classList.toggle("on");
   updateImage();
+
+  // efek getar (HP)
+  if (navigator.vibrate) {
+    navigator.vibrate(30);
+  }
 }
 
 // NAVIGATION (PAKAI addEventListener)
