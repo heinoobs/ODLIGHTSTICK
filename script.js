@@ -1,6 +1,7 @@
 const body = document.body;
 const img = document.getElementById("lightstick");
 const btnPower = document.getElementById("btn");
+const logo = document.getElementById("logo");
 const btnNext = document.getElementById("next");
 const btnPrev = document.getElementById("prev");
 
@@ -28,6 +29,12 @@ function togglePower() {
   if (navigator.vibrate) {
     navigator.vibrate(30);
   }
+
+  if (isOn) {
+  logo.src = "logo-on.png";
+} else {
+  logo.src = "logo-off.png";
+}
 }
 
 // NAVIGATION (PAKAI addEventListener)
