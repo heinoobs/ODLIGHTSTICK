@@ -15,7 +15,7 @@ body.on {
 }
 
 #lightstick {
-  width: 260px;
+  width: min(70vw, 320px);
   transition: opacity 0.2s ease;
 }
 
